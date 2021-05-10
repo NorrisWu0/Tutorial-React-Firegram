@@ -1,0 +1,44 @@
+@import './color';
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+  img {
+    max-height: calc(100px + 2vmin);
+    animation: logo-spin infinite 20s linear;
+  }
+
+  .link {
+    color: #61dafb;
+  }
+
+  h1 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+
+  h2 {
+    margin-top: 60px;
+    font-size: 2.6rem;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
