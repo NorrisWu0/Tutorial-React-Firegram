@@ -26,10 +26,10 @@ function useStorage(file) {
     }, async() => {
       // Fetch image url after file is uploaded.
       const url = await storageRef.getDownloadURL();
-      const createAt = timestamp;
+      const createdAt = timestamp;
       const fileName = file.name;
       // Add this document to firestore collection
-      collectionRef.add({fileName, url, createAt});
+      collectionRef.add({fileName, url, createdAt});
       setUrl(url);
     });    
   }, [file] );
