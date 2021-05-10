@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/uploadForm.css'
+import UploadProgressBar from './UploadProgressBar';
 
 
 function UploadForm() {
@@ -10,8 +11,6 @@ function UploadForm() {
 
   const uploadImage = (form) => {
     let _file = form.target.files[0];
-
-    console.log(_file);
 
     if (_file && allowTypes.includes(_file.type)) {
       setFile(_file);
@@ -31,6 +30,7 @@ function UploadForm() {
       </label>
       <div className="output">
         {error && <div className='error'>{error}</div> }
+        {file && <UploadProgressBar file={file} setFile={setFile}/>}
         {file && <div>uploading {file.name}...</div> }
       </div>
     </form>
