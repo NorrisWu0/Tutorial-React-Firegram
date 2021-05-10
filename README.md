@@ -15,7 +15,7 @@ The content is produced by [The Net Ninja](https://www.youtube.com/channel/UCW5Y
 
 This repository has 3 branches
 
-- `main` - The branch that based on `start` branch, but with commits that details the stages of work. (essentially a home-made test for this tutorial)
+- `test` - The branch that based on `start` branch, but with commits that details the stages of work. (essentially a home-made test for this tutorial)
 - `start` - The bare bone project with only the pre-made css & folder structure.
 - `final` - The completed app
 
